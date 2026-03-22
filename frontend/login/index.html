@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/login/style.css">
     <title>Academic Course Planner</title>
 </head>
 <body>
-    <form method="GET" action="/auth/google">
-        <button>Sign in with Google</button>
-    </form>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="text-center">
+
+            <h1 class="main-title">Academic Course Planner</h1>
+
+            <!-- Google Login Button -->
+            <a href="/auth/google" class="btn btn-primary google-btn mt-4">
+                <img src="/login/Images/google_logo.png" alt="Google Icon">
+                <span>Sign in with Google</span>
+            </a>
+
+            <!-- Info -->
+            <div class="d-flex justify-content-center align-items-center gap-2 mt-3">
+                <i class="bi bi-info-circle-fill info-icon"></i>
+                <span class="info-text-small">
+                    Please sign in with your Ahmedabad University email id
+                </span>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
